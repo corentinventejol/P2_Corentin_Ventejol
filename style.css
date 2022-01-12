@@ -1,0 +1,262 @@
+.color_blue{
+    color: blue;
+}
+.color_lightgray{
+    color: lightgray;
+}
+.back_blue{
+    background-color: blue;
+}
+.back_lightgray{
+    background-color: lightgray;
+}
+.bordureNone{
+    border: none;
+}
+.flexCentre{
+    display: flex;
+    justify-content: center;
+    align-items: center 
+}
+.flexBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*text*/
+h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+h3{
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+/*Header*/
+.BordureSearch{
+    width: 400px;
+    border-radius: 10px;
+    border: 0 5px solid #f2f2f2;
+}
+.paddingsearch{
+    padding-left: 20px;
+}
+.recherche{
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.IconSize{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+.boutonSearch{
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+header{
+    position: relative;
+}
+/*filtres*/
+.margFiltre{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.filtre{
+    display: flex;
+    align-items: center;
+}
+.margFiltreTitre{
+    margin-right: 20px;
+}
+.margFiltreTitre h3{
+    /*font-size: ;*/
+}
+.filtreTextIcons{
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtreTextIcons:hover > .filtreTexte{
+    color: #0065fc;
+}
+.filtreTextIcons:hover > .filtreIcons{
+    color: white;
+    background-color: #0065fc;
+}
+.filtreTexte{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.filtreIcons{
+    margin: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+/*info icon*/
+.info{
+    display: flex;
+    align-items: center;
+}
+.parentIcon{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+/*navigation*/
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+nav ul li a{
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color: black;
+}
+nav ul li.active{ 
+    border-top: 2px solid blue;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Hebergements*/
+.hebergements{
+    border: 2px solid blue;/*pour le test*/
+    width: 60%;
+}
+.hebergements h2{
+    border: 2px solid green;/*pour le test*/
+}
+.hebergements .figures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    border: 2px solid red;/*pour le test*/
+}
+.hebergements .figures figure{
+    border:2px solid yellow;/*pour le test*/
+    width: 30%;
+    height: 200px;
+    margin: 0;
+}
+.hebergements .figures figure .image{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.hebergements .figures figure .image img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+/*populaires*/
+.populaires{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    border: 2px solid blue;/*pour le test*/
+    width: 30%;
+}
+.populaires h2{
+    border: 2px solid green;/*pour le test*/
+}
+.populaires .figures{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;/*pour le test*/
+}
+.populaires .figures figure{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid yellow;/*pour le test*/
+    margin: 0;
+}
+.populaires .figures img{
+    width: 30%;
+    height: 200px; /*attention a modifier*/
+}
+.populaires .figures figcaption{
+    position: relative;
+    margin: 10px;
+}
+.populaires .figures figcaption .stars{
+    position: absolute;
+    bottom: 10px;
+}
+
+/*activités*/
+.activites{
+    display: flex;
+    flex-direction: row;
+}
+.activites .colonne{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue; /*pour le test*/
+}
+.activites .colonne_double{
+    border: 2px solid green; /*pour le test*/
+}
+.activites .colonne_simple{
+    border: 2px solid green; /*pour le test*/
+}
+/*footer*/
+.footer{
+    height: 300px;
+    margin-top: 100px;
+}
+.tailleBlocFoot{
+    height: 150px;
+}
+.margBlocFoot1{
+    margin-left: 5%;
+}
+.margBlocFoot2{
+    margin-right: 15%;
+}
+
