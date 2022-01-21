@@ -63,8 +63,8 @@
         </div>
         <nav>
             <ul>
-                <li class="active"><a href="#">hebergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li class="active"><a href="#hebergements">hebergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -72,7 +72,7 @@
 
     </section>
     <main>
-        <section class="hebergements back_lightgray">
+        <section class="hebergements back_lightgray" id="hebergements">
             <div class="sizeHebergement">
                 <h2>Hébergement à Marseille</h2>
                 <div class="figures">
@@ -183,13 +183,15 @@
         </section>
         <aside class="populaires back_lightgray">
             <div class="sizePopulaires">
-                <div class="flexbox">
+                <div class="titre flexbox">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
                 </div>
-                <div class="figures back_white">
-                    <figure>
-                        <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image" height="200" width="200">
+                <div class="figures">
+                    <figure class="back_white">
+                        <div class="image">
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image" height="200" width="200">
+                        </div>
                         <figcaption>                            
                             <h3>Hôtel le soleil du matin</h3>
                             <p>Nuit à partir de <b>128€</b></p>    
@@ -203,8 +205,10 @@
                         </figcaption>
                     </figure>
 
-                    <figure>
-                        <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image" height="200" width="200">
+                    <figure class="back_white">
+                        <div class="image">
+                            <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image" height="200" width="200">
+                        </div>
                         <figcaption>
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>nuit à partir de <b>71€</b></p>
@@ -218,8 +222,10 @@
                         </figcaption>
                     </figure>
 
-                    <figure>
-                        <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="image" height="200" width="200">
+                    <figure class="back_white">
+                        <div class="image">
+                            <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="image" height="200" width="200">
+                        </div>
                         <figcaption>
                             <h3>Hôtel tout bleu et blanc</h3>
                             <p>Nuit à partir de <b>68€</b></p>
@@ -236,27 +242,33 @@
             </div>
         </aside>
     </main>
-    <section>
+    <section id="activites">
         <h2>Activités à marseilles</h2>
         <div class="activites">
             <div class="colonne_simple colonne">
                 <figure>
-                    <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port" height="200" width="200">
+                    <div class="image">
+                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port" height="200" width="200">
+                    </div>
                     <figcaption>
                         <p>Vieux port</p>
                     </figcaption>
                 </figure>
             </div>
             <div class="colonne_double colonne">
-                <figure>
-                     <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="pomègues" height="200" width="200">
+                <figure class="h240">
+                    <div class="image">
+                        <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="pomègues" height="200" width="200">
+                    </div>
                     <figcaption>
                         <p>Fort de pomègues</p>
                     </figcaption>
                 </figure>
 
-                <figure>
-                    <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="frioul" height="200" width="200">
+                <figure class="h160">
+                    <div class="image">
+                        <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="frioul" height="200" width="200">
+                    </div>
                     <figcaption>
                         <p>îles du frioul</p>
                     </figcaption>
@@ -264,22 +276,28 @@
             </div>
             <div class="colonne_simple colonne">
                 <figure>
-                    <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" height="200" width="200">
+                    <div class="image">
+                        <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" height="200" width="200">
+                    </div>
                     <figcaption>
                         <p>Parc Nationale des Calanques</p>
                     </figcaption>
                 </figure>
             </div>
             <div class="colonne_double colonne">
-                <figure>
-                    <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame" height="200" width="200">
+                <figure class="h200">
+                    <div class="image">
+                        <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame" height="200" width="200">
+                    </div>
                      <figcaption>
                         <p>Notre-Dame-de-la-Garde</p>
                     </figcaption>
                 </figure>
 
-                <figure>
-                    <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp" height="200" width="200">
+                <figure class="h200">
+                    <div class="image">
+                        <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp" height="200" width="200">
+                    </div>
                     <figcaption>
                         <p>Parc Longchamp</p>
                     </figcaption>

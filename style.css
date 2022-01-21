@@ -241,9 +241,12 @@ main{
     flex-direction: column;
     border: 2px solid blue;
     width: 30%;
+    padding: 20px;
 }
 .populaires .titre{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 .populaires .titre h2{
     border: 2px solid green;/*pour le test*/
@@ -251,7 +254,8 @@ main{
 .populaires .figures{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 510px;
     border: 2px solid red;/*pour le test*/
 }
 .populaires .figures figure{
@@ -260,24 +264,28 @@ main{
     border: 2px solid yellow;/*pour le test*/
     margin: 0;
 }
-.populaires .figures img{
-    width: 30%;
+.populaires .figures .image{
+    width: 40%;
     height: 135px;
+    overflow: hidden;
+    border: 2px solid blue; /*pour le test */
 }
 .populaires .figures figcaption{
     position: relative;
     margin: 10px;
+    width: 60%;
+    flex-direction: column;
 }
 .populaires .figures figcaption .stars{
     position: absolute;
     bottom: 10px;
 }
- 
 /*activités*/
 .activites{
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 450px;
 }
 .activites .colonne{
     display: flex;
@@ -288,15 +296,39 @@ main{
 .activites .colonne figure {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-.activites .colonne figure img{
+.activites .colonne figure .image{
     max-width: 100%;
+    border: 2px solid blue; /*pour le test */
+    overflow: hidden;
+}
+.activites .colonne figure .image img{
+    width: 100%;
+    height: auto;
 }
 .activites .colonne_double{
     border: 2px solid green; /*pour le test*/
 }
 .activites .colonne_simple{
     border: 2px solid green; /*pour le test*/
+}
+.activites .colonne_simple figure{
+    height: 100%;
+}
+.activites .colonne_simple figure .h240{
+    height: 240px;
+}
+.activites .colonne_simple figure.h200{
+    height: 200px;
+}
+.activites .colonne_simple figure.h160{
+    height: 160px;
+}
+.activites .colonne_simple figure .image{
+    height: 400px;
 }
 /*footer*/
 .footer{

@@ -7,6 +7,6 @@ git remote add origin https://github.com/corentinventejol/P2_Corentin_Ventejol.g
 git push -u origin main
 
 instructions pour sauvegardes
-git init
+git add *
 git commit -m "non de la sauvegarde"
 git push
