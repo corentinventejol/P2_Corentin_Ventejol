@@ -56,6 +56,13 @@ p{
     margin: 0;
 }
 /*Header*/
+.logo{
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
 .BordureSearch{
     width: 400px;
     border-radius: 10px;
@@ -86,6 +93,12 @@ p{
 }
 header{
     position: relative;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+header p{
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 /*filtres*/
 .margFiltre{
@@ -173,15 +186,18 @@ main{
     display: flex;
     justify-content: space-evenly;
     height: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
 }
 
 /*Hebergements*/
 .hebergements{
-    border: 2px solid blue;/*pour le test*/
+    /* border: 2px solid blue; pour le test */
     width: 60%;
 }
 .hebergements h2{
-    border: 2px solid green;/*pour le test*/
+    /* border: 2px solid green; pour le test */
     margin-top: 25px;
     margin-left: 20px;
 }
@@ -198,12 +214,12 @@ main{
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-evenly;
-    border: 2px solid red;/*pour le test*/
+    /* border: 2px solid red; pour le test */
     height: 480px;
 }
 .hebergements .figures figure{
     flex-direction: column;
-    border:2px solid yellow;/*pour le test*/
+    /* border:2px solid yellow; pour le test */
     width: 30%;
     height: 200px;
     margin: 0;
@@ -239,7 +255,7 @@ main{
 .populaires{ 
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
+    /* border: 2px solid blue; pour le test */
     width: 30%;
     padding: 20px;
 }
@@ -248,27 +264,27 @@ main{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.populaires .titre h2{
-    border: 2px solid green;/*pour le test*/
-}
+/* .populaires .titre h2{
+    /* border: 2px solid green; pour le test 
+} */
 .populaires .figures{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 510px;
-    border: 2px solid red;/*pour le test*/
+    /* border: 2px solid red; pour le test */
 }
 .populaires .figures figure{
     display: flex;
     flex-direction: row;
-    border: 2px solid yellow;/*pour le test*/
+    /* border: 2px solid yellow; pour le test */
     margin: 0;
 }
 .populaires .figures .image{
     width: 40%;
     height: 135px;
     overflow: hidden;
-    border: 2px solid blue; /*pour le test */
+    /* border: 2px solid blue; pour le test */
 }
 .populaires .figures figcaption{
     position: relative;
@@ -281,16 +297,27 @@ main{
     bottom: 10px;
 }
 /*activités*/
+#activites{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
 .activites{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 450px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.activites h2{
+    margin-bottom: 5px;
 }
 .activites .colonne{
     display: flex;
     flex-direction: column;
-    border: 2px solid blue; /*pour le test*/
+    justify-content: space-between;
+    /* border: 2px solid blue; pour le test */
     width: 24%;
 }
 .activites .colonne figure {
@@ -302,33 +329,46 @@ main{
 }
 .activites .colonne figure .image{
     max-width: 100%;
-    border: 2px solid blue; /*pour le test */
+    /* border: 2px solid blue; pour le test */
     overflow: hidden;
+    border-radius: 20px 20px 0 0;
 }
 .activites .colonne figure .image img{
     width: 100%;
     height: auto;
 }
-.activites .colonne_double{
-    border: 2px solid green; /*pour le test*/
-}
-.activites .colonne_simple{
-    border: 2px solid green; /*pour le test*/
-}
+/* .activites .colonne_double{
+    border: 2px solid green; pour le test 
+}  */
+/* .activites .colonne_simple{
+    border: 2px solid green; pour le test 
+}  */
 .activites .colonne_simple figure{
     height: 100%;
 }
-.activites .colonne_simple figure .h240{
+.activites .colonne_double figure.h240{
     height: 240px;
+    box-shadow: 1px 1px 12px #deebff;
 }
-.activites .colonne_simple figure.h200{
+.activites .colonne_double figure.h200{
     height: 200px;
+    box-shadow: 1px 1px 12px #deebff;
 }
-.activites .colonne_simple figure.h160{
+.activites .colonne_double figure.h160{
     height: 160px;
+    box-shadow: 1px 1px 12px #deebff;
 }
-.activites .colonne_simple figure .image{
+.activites .colonne_simple figure .image img{
     height: 400px;
+    box-shadow: 1px 1px 12px #deebff;
+}
+.activites figure figcaption{
+    border: 2px solid #deebff;
+    border-radius: 0 0 15px 15px;
+}
+.activites .colonne p{
+    margin-top: 15px;
+    margin-left: 10px;
 }
 /*footer*/
 .footer{
@@ -337,12 +377,19 @@ main{
 }
 .tailleBlocFoot{
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .margBlocFoot1{
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .margBlocFoot2{
-    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* Media query Tablette */
