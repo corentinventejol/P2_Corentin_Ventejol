@@ -1,21 +1,26 @@
-html,
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");    
+    font-weight: 100 1000;
+}
 body {
   font-family: Raleway, Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 .color_blue{
     color: blue;
 }
 .color_lightgray{
-    color: lightgray;
+    color: #f2f2f2;
 }
 .back_blue{
     background-color: blue;
 }
 .back_lightgray{
-    background-color: lightgray;
+    background-color: #f2f2f2;
 }
 .back_white{
-    background-color: #f2f2f2;
+    background-color: white;
 }
 .bordureNone{
     border: none;
@@ -279,11 +284,13 @@ main{
     flex-direction: row;
     /* border: 2px solid yellow; pour le test */
     margin: 0;
+    border-radius: 15px 15px 15px 15px
 }
 .populaires .figures .image{
     width: 40%;
     height: 135px;
     overflow: hidden;
+    border-radius: 15px 0 0 15px
     /* border: 2px solid blue; pour le test */
 }
 .populaires .figures figcaption{
@@ -319,6 +326,10 @@ main{
     justify-content: space-between;
     /* border: 2px solid blue; pour le test */
     width: 24%;
+}
+.activites .colonne p{
+    margin-top: 15px;
+    margin-left: 10px;
 }
 .activites .colonne figure {
     margin: 0;
@@ -366,20 +377,25 @@ main{
     border: 2px solid #deebff;
     border-radius: 0 0 15px 15px;
 }
-.activites .colonne p{
-    margin-top: 15px;
-    margin-left: 10px;
-}
 /*footer*/
-.footer{
-    height: 300px;
-    margin-top: 100px;
+footer{
+    display: flex;;
+    margin-top: 50px;
+    padding: 50px 40px 40px 40px;d
 }
-.tailleBlocFoot{
+
+footer > div{
+    margin-right: 200px;
+}
+footer > div p{
+    margin-top: 20px;
+}
+/* .tailleBlocFoot{
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin-right: 100px;
 }
 .margBlocFoot1{
     display: flex;
@@ -390,10 +406,19 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
+} */
 
 /* Media query Tablette */
 @media screen and (max-width: 870px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    .hebergements{
+        width: 100%;
+    }
+    .populaires{
+        width: 100%;
+    }
     /* .margFiltreTitre h3{
         font-size: 50px;
         color: green; */
