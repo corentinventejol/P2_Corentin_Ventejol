@@ -38,7 +38,7 @@ body {
 figure,
 figcaption,
 .flexbox {
-    display: flex;
+    /* display: flex; */
 }
 
 /*text size*/
@@ -70,8 +70,12 @@ p{
 }
 .BordureSearch{
     width: 400px;
+    display: flex;
     border-radius: 10px;
-    border: 0 5px solid #f2f2f2;
+    border: 5px solid #f2f2f2;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .paddingsearch{
     padding-left: 20px;
@@ -86,7 +90,6 @@ p{
 .IconSize{
     height: 50px;
     width: 50px;
-    border-radius: 10px 0 0 10px;
 }
 .boutonSearch{
     height: 50px;
@@ -171,11 +174,17 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+nav ul:hover{
+
+}
 nav ul li{
     display: inline-block;
     margin-left: 10px;
     border-top: 2px solid white;
-    padding-top: 20px;
+    padding: 40px 20px;
+}
+nav ul li:hover{
+    border-top: 2px solid blue;
 }
 nav ul li a{
     text-decoration:none;
@@ -184,7 +193,7 @@ nav ul li a:hover{
     color: black;
 }
 nav ul li.active{ 
-    border-top: 2px solid blue;
+    /* border-top: 2px solid blue; */
 }
 
 main{
@@ -200,6 +209,7 @@ main{
 .hebergements{
     /* border: 2px solid blue; pour le test */
     width: 60%;
+    border-radius: 20px;
 }
 .hebergements h2{
     /* border: 2px solid green; pour le test */
@@ -263,6 +273,7 @@ main{
     /* border: 2px solid blue; pour le test */
     width: 30%;
     padding: 20px;
+    border-radius: 20px;
 }
 .populaires .titre{
     display: flex;
@@ -325,7 +336,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     /* border: 2px solid blue; pour le test */
-    width: 24%;
+    width: 23%;
 }
 .activites .colonne p{
     margin-top: 15px;
@@ -337,23 +348,17 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
 }
 .activites .colonne figure .image{
     max-width: 100%;
-    /* border: 2px solid blue; pour le test */
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
 }
 .activites .colonne figure .image img{
     width: 100%;
     height: auto;
 }
-/* .activites .colonne_double{
-    border: 2px solid green; pour le test 
-}  */
-/* .activites .colonne_simple{
-    border: 2px solid green; pour le test 
-}  */
 .activites .colonne_simple figure{
     height: 100%;
 }
@@ -381,7 +386,7 @@ main{
 footer{
     display: flex;;
     margin-top: 50px;
-    padding: 50px 40px 40px 40px;d
+    padding: 50px 40px 40px 40px;
 }
 
 footer > div{
@@ -390,48 +395,49 @@ footer > div{
 footer > div p{
     margin-top: 20px;
 }
-/* .tailleBlocFoot{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 100px;
-}
-.margBlocFoot1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.margBlocFoot2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-} */
+
 
 /* Media query Tablette */
 @media screen and (max-width: 870px) {
     main {
+        display: flex;
+        height: auto;
         flex-direction: column-reverse;
     }
+    .BordureSearch{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .hebergements{
+        width: 100%;
+    }
+    .hebergements .figures {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .hebergements .figures figure {
         width: 100%;
     }
     .populaires{
         width: 100%;
     }
-    /* .margFiltreTitre h3{
-        font-size: 50px;
-        color: green; */
-    /* } */
+    .activites {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .activites .colonne {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
 }
 
 /* Media query Smartphone */
 @media screen and (max-width: 600px) {
-    body {
-        max-width: 100%;
-    }
-    /* .margFiltreTitre h3{
-        font-size: 120px;
-        color: red; */
-    /* } */
+
 }
