@@ -415,7 +415,7 @@ footer > div p{
     nav ul {
         list-style-type: none;
         margin: 0 0 20px 0;
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid #deebff;
     }
     nav ul li {
         display: inline-block;
@@ -431,6 +431,8 @@ footer > div p{
         display: flex;
         height: auto;
         flex-direction: column-reverse;
+        margin-left: 0; 
+        margin-right: 0;
     }
     .BordureSearch{
         width: 100%;
@@ -446,21 +448,32 @@ footer > div p{
     }
     .margFiltreTitre{
         margin-right: 120px;
+        margin-bottom: 10px;
     }
     .hebergements{
         width: 100%;
+        background-color: white;
+    }
+    .sizeHebergement h2{
+        margin-bottom: 20px;
+    }
+    .hebergements b p {
+        margin-top: 10px;
     }
     .hebergements .figures {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
+        box-shadow: black;
     }
     .hebergements .figures figure {
-        width: 100%;
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
     .populaires{
-        width: 100%;
+        width: 90%;
     }
     .activites {
         display: flex;
@@ -470,8 +483,20 @@ footer > div p{
     .activites .colonne {
         width: 100%;
     }
+    .activites .colonne_simple{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .activites .colonne_double{
+        height: 200px;
+        margin-bottom: 10px;
+    }
     footer {
         flex-direction: column;
+        padding: 50px 0 0 30px
+    }
+    footer > div p {
+        margin-bottom: 30px;
     }
 }
 
