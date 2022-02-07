@@ -72,9 +72,9 @@ p{
     width: 400px;
     display: flex;
     border-radius: 10px;
-    border: 5px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
 }
 .BordureSearch .icon-search{
@@ -104,8 +104,8 @@ p{
 }
 header{
     position: relative;
-    margin-left: 40px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 header p{
     margin-bottom: 20px;
@@ -241,6 +241,7 @@ main{
     width: 30%;
     height: 200px;
     margin: 0;
+    padding: 5px;
 }
 .hebergements .figures figure figcaption{
     flex-direction: column;
@@ -252,6 +253,7 @@ main{
 }
 .hebergements .figures figure figcaption p{
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 .hebergements .figures figure .image{
     display: flex;
@@ -264,9 +266,9 @@ main{
     border-radius: 20px 20px 0 0;
 }
 .hebergements .figures figure .image img{
-    flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
+    object-fit: cover;
 }
 
 /*populaires*/
@@ -298,7 +300,8 @@ main{
     flex-direction: row;
     /* border: 2px solid yellow; pour le test */
     margin: 0;
-    border-radius: 15px 15px 15px 15px
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px;
 }
 .populaires .figures .image{
     width: 40%;
@@ -307,11 +310,19 @@ main{
     border-radius: 15px 0 0 15px
     /* border: 2px solid blue; pour le test */
 }
+.populaires .figures .image img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
 .populaires .figures figcaption{
     position: relative;
     margin: 10px;
     width: 60%;
     flex-direction: column;
+}
+.populaires .figures figcaption p{
+    margin-top: 5px;
 }
 .populaires .figures figcaption .stars{
     position: absolute;
@@ -362,8 +373,14 @@ main{
     width: 100%;
     height: auto;
 }
+.activites .colonne figure figcaption{
+    height: 50px;
+}
 .activites .colonne_simple figure{
     height: 100%;
+}
+.activites .colonne_simple figure .image{
+    height: 400px;
 }
 .activites .colonne_double figure.h240{
     height: 240px;
@@ -376,6 +393,15 @@ main{
 .activites .colonne_double figure.h160{
     height: 160px;
     box-shadow: 1px 1px 12px #deebff;
+}
+.activites .colonne_double figure.h160 .image{
+    height: 110px;
+}
+.activites .colonne_double figure.h240 .image{
+    height: 180px;
+}
+.activites .colonne_double figure.h200.image{
+    height: 140px;
 }
 .activites .colonne_simple figure .image img{
     height: 400px;
@@ -416,12 +442,17 @@ footer > div p{
         list-style-type: none;
         margin: 0 0 20px 0;
         border-bottom: 2px solid #deebff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;  
     }
     nav ul li {
         display: inline-block;
         margin-left: 10px;
         border-top: 2px solid white;
-        padding: 0; 
+        padding: 0 0 15px 0;
+        width: 50%;
+        text-align: center;
     }
     nav ul li:hover{
         border-bottom: 2px solid blue;
@@ -440,24 +471,25 @@ footer > div p{
         margin-right: 20px;
     }
     .BordureSearch .icon-search{
-        display: block;
+        display: flex;
         background-color: blue;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
     }
     .boutonSearch{
         display: none;
     }
     .margFiltreTitre{
-        margin-right: 120px;
+        margin-right: 200px;
         margin-bottom: 10px;
+    }
+    .filtreTextIcons {
+        margin-bottom: 15px;
     }
     .hebergements{
         width: 100%;
         background-color: white;
-        max-width: 100%;
-        max-height: 100%;
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
     }
     .sizeHebergement h2{
         margin-bottom: 20px;
@@ -485,23 +517,33 @@ footer > div p{
         flex-direction: column;
         height: auto;
     }
-    .activites .colonne {
+     .activites .colonne {
         width: 100%;
     }
-    .activites .colonne_simple{
+    .activites .colonne_simple .image{
         height: 200px;
         margin-bottom: 10px;
     }
-    .activites .colonne_double{
+    .activites .colonne_simple figure .image {
         height: 200px;
-        margin-bottom: 10px;
+    }
+    .activites .colonne_double figure.h160 .image,
+    .activites .colonne_double figure.h200 .image,
+    .activites .colonne_double figure.h240 .image {
+        height: 200px;
     }
     footer {
         flex-direction: column;
         padding: 50px 0 0 30px
     }
+    footer > div {
+        margin-right: 0;
+    }
     footer > div p {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+    }
+    footer > div h3 {
+        margin-top: 30px;
     }
 }
 
