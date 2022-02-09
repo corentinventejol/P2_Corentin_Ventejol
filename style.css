@@ -61,12 +61,16 @@ p{
     margin: 0;
 }
 /*Header*/
-.logo{
+.logo {
+    display: flex;
+}
+.logo img{
     width: 100px;
     height: auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 40px; */
+    margin: 40px 20px 40px 20px; 
 }
 .BordureSearch{
     width: 400px;
@@ -362,7 +366,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     overflow: hidden;
 }
 .activites .colonne figure .image{
@@ -370,8 +374,11 @@ main{
     overflow: hidden;
 }
 .activites .colonne figure .image img{
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 .activites .colonne figure figcaption{
     height: 50px;
@@ -398,13 +405,13 @@ main{
     height: 110px;
 }
 .activites .colonne_double figure.h240 .image{
-    height: 180px;
+    height: 190px;
 }
 .activites .colonne_double figure.h200.image{
     height: 140px;
 }
 .activites .colonne_simple figure .image img{
-    height: 400px;
+    /* height: 400px; */
     box-shadow: 1px 1px 12px #deebff;
 }
 .activites figure figcaption{
@@ -428,7 +435,13 @@ footer > div p{
 
 /* Media query Tablette */
 @media screen and (max-width: 870px) {
-    h1 {
+    header h1 {
+        margin-top: 80px;
+    }
+    .logo {
+        justify-content: space-around;
+    }
+    .logo img {
         margin-top: 20px;
     }
     nav{
@@ -512,6 +525,9 @@ footer > div p{
     .populaires{
         width: 90%;
     }
+    #activites{
+        
+    }
     .activites {
         display: flex;
         flex-direction: column;
@@ -520,18 +536,18 @@ footer > div p{
      .activites .colonne {
         width: 100%;
     }
-    .activites .colonne_simple .image{
-        height: 200px;
-        margin-bottom: 10px;
+    .activites .colonne figure {
+        height: 200px ! important;
     }
-    .activites .colonne_simple figure .image {
-        height: 200px;
+    .activites .colonne figure .image,
+    .activites .colonne figure .image img{
+        height: 180px !important;
+        box-shadow: black 2px;
     }
-    .activites .colonne_double figure.h160 .image,
-    .activites .colonne_double figure.h200 .image,
-    .activites .colonne_double figure.h240 .image {
-        height: 200px;
+    .activites .colonne figure{
+        margin-bottom: 20px !important;
     }
+
     footer {
         flex-direction: column;
         padding: 50px 0 0 30px
