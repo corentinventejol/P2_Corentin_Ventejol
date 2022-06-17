@@ -161,7 +161,7 @@ header p{
 /*info icon*/
 .info{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .parentIcon{
     width: 20px;
@@ -499,6 +499,8 @@ footer > div p{
     }
     .filtreTextIcons {
         margin-bottom: 15px;
+        margin-right: 0px;
+        margin-left: 10px;
     }
     .hebergements{
         width: 100%;
@@ -521,6 +523,8 @@ footer > div p{
         width: 90%;
         margin-left: 20px;
         margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 12px #deebff;
     }
     .populaires{
         width: 90%;
