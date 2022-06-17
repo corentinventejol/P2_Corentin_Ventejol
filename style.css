@@ -35,11 +35,6 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-figure,
-figcaption,
-.flexbox {
-    /* display: flex; */
-}
 
 /*text size*/
 h1{
@@ -318,6 +313,8 @@ main{
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+    height: 30px;
+    width: 10px;
 }
 .populaires .figures figcaption{
     position: relative;
