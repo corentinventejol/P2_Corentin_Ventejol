@@ -62,16 +62,12 @@ p{
 .logo img{
     width: 100px;
     height: auto;
-    /* margin-bottom: 40px;
-    margin-left: 20px;
-    margin-top: 40px; */
-    margin: 40px 20px 40px 20px; 
+    margin: 40px 20px 40px 0; 
 }
 .BordureSearch{
     width: 400px;
     display: flex;
     border-radius: 10px;
-    border: 2px solid #f2f2f2;
     justify-content: space-between;
     border-radius: 15px;
     overflow: hidden;
@@ -88,6 +84,7 @@ p{
     font-size: 18px;
     color: black;
     font-weight: bold;
+    border: 2px solid #f2f2f2;
 }
 .IconSize{
     height: 50px;
@@ -103,7 +100,7 @@ p{
 }
 header{
     position: relative;
-    padding-left: 20px;
+    padding-left: 60px;
     padding-right: 20px;
 }
 header p{
@@ -194,9 +191,6 @@ nav ul li a{
 nav ul li a:hover{
     color: black;
 }
-nav ul li.active{ 
-    /* border-top: 2px solid blue; */
-}
 
 main{
     display: flex;
@@ -221,7 +215,7 @@ main{
 .hebergements p{
     margin-left: 0;
 }
-.hebergements b p{
+.hebergements p b{
     margin-left: 20px;
     font-size: 15px;
 }
@@ -268,7 +262,7 @@ main{
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-}
+} 
 
 /*populaires*/
 .populaires{ 
@@ -419,7 +413,8 @@ main{
 footer{
     display: flex;;
     margin-top: 50px;
-    padding: 50px 40px 40px 40px;
+    padding: 50px 40px 40px 0px;
+    justify-content: space-around;
 }
 
 footer > div{
@@ -429,9 +424,8 @@ footer > div p{
     margin-top: 20px;
 }
 
-
-/* Media query Tablette */
-@media screen and (max-width: 870px) {
+/* Media query Smartphone */
+@media screen and (max-width: 600px) {
     header h1 {
         margin-top: 80px;
     }
@@ -441,7 +435,7 @@ footer > div p{
     .logo img {
         margin-top: 20px;
     }
-    nav{
+    nav {
         /* position: relative; */
         top: 100px;
         left: 0;
@@ -464,7 +458,7 @@ footer > div p{
         width: 50%;
         text-align: center;
     }
-    nav ul li:hover{
+    nav ul li:hover {
         border-bottom: 2px solid blue;
         border-top: none;
     }
@@ -475,22 +469,26 @@ footer > div p{
         margin-left: 0; 
         margin-right: 0;
     }
-    .BordureSearch{
+    .BordureSearch {
         width: 100%;
         margin-left: 0;
         margin-right: 20px;
+        border: 2px solid #f2f2f2;
     }
-    .BordureSearch .icon-search{
+    .recherche {
+        border: #deebff 0px;
+    }
+    .BordureSearch .icon-search {
         display: flex;
         background-color: blue;
         width: 50px;
         height: 50px;
         border-radius: 15px;
     }
-    .boutonSearch{
+    .boutonSearch {
         display: none;
     }
-    .margFiltreTitre{
+    .margFiltreTitre {
         margin-right: 200px;
         margin-bottom: 10px;
     }
@@ -499,11 +497,11 @@ footer > div p{
         margin-right: 0px;
         margin-left: 10px;
     }
-    .hebergements{
+    .hebergements {
         width: 100%;
         background-color: white;
     }
-    .sizeHebergement h2{
+    .sizeHebergement h2 {
         margin-bottom: 20px;
     }
     .hebergements b p {
@@ -523,12 +521,11 @@ footer > div p{
         border-radius: 20px;
         box-shadow: 1px 1px 12px #deebff;
     }
-    .populaires{
+    .populaires {
         width: 90%;
+        border-radius: 0px
     }
-    #activites{
-        
-    }
+    
     .activites {
         display: flex;
         flex-direction: column;
@@ -541,7 +538,7 @@ footer > div p{
         height: 200px ! important;
     }
     .activites .colonne figure .image,
-    .activites .colonne figure .image img{
+    .activites .colonne figure .image img {
         height: 180px !important;
         box-shadow: black 2px;
     }
@@ -562,9 +559,4 @@ footer > div p{
     footer > div h3 {
         margin-top: 30px;
     }
-}
-
-/* Media query Smartphone */
-@media screen and (max-width: 600px) {
-    
 }
