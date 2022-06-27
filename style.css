@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Raleway";
-    src: url("./Raleway/Raleway-VariableFont_wght.ttf");    
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
     font-weight: 100 1000;
 }
 body {
@@ -28,7 +28,7 @@ body {
 .flexCentre{
     display: flex;
     justify-content: center;
-    align-items: center 
+    align-items: center
 }
 .flexBetween{
     display: flex;
@@ -62,12 +62,11 @@ p{
 .logo img{
     width: 100px;
     height: auto;
-    margin: 40px 20px 40px 0; 
+    margin: 40px 20px 40px 0;
 }
 .BordureSearch{
     width: 400px;
-    display: flex;
-    border-radius: 10px;
+    display:inline-flex;
     justify-content: space-between;
     border-radius: 15px;
     overflow: hidden;
@@ -215,10 +214,7 @@ main{
 .hebergements p{
     margin-left: 0;
 }
-.hebergements p b{
-    margin-left: 20px;
-    font-size: 15px;
-}
+
 .hebergements .figures{
     display: flex;
     flex-direction: row;
@@ -262,10 +258,14 @@ main{
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-} 
+}
+.text_afficher{
+    margin-left: 26px;
+    margin-top: 10px;
+}
 
 /*populaires*/
-.populaires{ 
+.populaires{
     display: flex;
     flex-direction: column;
     /* border: 2px solid blue; pour le test */
@@ -279,7 +279,7 @@ main{
     margin-bottom: 20px;
 }
 /* .populaires .titre h2{
-    /* border: 2px solid green; pour le test 
+    /* border: 2px solid green; pour le test
 } */
 .populaires .figures{
     display: flex;
@@ -325,8 +325,8 @@ main{
 }
 /*activités*/
 #activites{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 52px;
+    margin-right: 32px;
     margin-top: 40px;
 }
 .activites{
@@ -414,11 +414,15 @@ footer{
     display: flex;;
     margin-top: 50px;
     padding: 50px 40px 40px 0px;
-    justify-content: space-around;
 }
-
-footer > div{
-    margin-right: 200px;
+.marg_footer1{
+    margin-left: 60px
+}
+.marg_footer2{
+    margin-left: 310px;
+}
+.marg_footer3{
+    margin-left: 328px;
 }
 footer > div p{
     margin-top: 20px;
@@ -426,15 +430,20 @@ footer > div p{
 
 /* Media query Smartphone */
 @media screen and (max-width: 600px) {
+/* header */
+    header {
+        padding-left: 35px;
+    }
     header h1 {
         margin-top: 80px;
     }
     .logo {
-        justify-content: space-around;
+        margin-left: 128px;
     }
     .logo img {
         margin-top: 20px;
     }
+/* navigation */
     nav {
         /* position: relative; */
         top: 100px;
@@ -448,7 +457,7 @@ footer > div p{
         border-bottom: 2px solid #deebff;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;  
+        justify-content: space-evenly;
     }
     nav ul li {
         display: inline-block;
@@ -459,16 +468,19 @@ footer > div p{
         text-align: center;
     }
     nav ul li:hover {
-        border-bottom: 2px solid blue;
+        border-bottom: 3px solid blue;
         border-top: none;
+        margin-bottom: -2px;
+        margin-left: 0px;
     }
     main {
         display: flex;
         height: auto;
         flex-direction: column-reverse;
-        margin-left: 0; 
+        margin-left: 0;
         margin-right: 0;
     }
+/* bouton-search */
     .BordureSearch {
         width: 100%;
         margin-left: 0;
@@ -488,6 +500,7 @@ footer > div p{
     .boutonSearch {
         display: none;
     }
+/* filtres */
     .margFiltreTitre {
         margin-right: 200px;
         margin-bottom: 10px;
@@ -497,6 +510,7 @@ footer > div p{
         margin-right: 0px;
         margin-left: 10px;
     }
+/* hebergements */
     .hebergements {
         width: 100%;
         background-color: white;
@@ -521,11 +535,16 @@ footer > div p{
         border-radius: 20px;
         box-shadow: 1px 1px 12px #deebff;
     }
+/* populaires */
     .populaires {
         width: 90%;
         border-radius: 0px
     }
-    
+/* activites */
+    #activites {
+        margin-left: 23px;
+        margin-right: 17px
+    }
     .activites {
         display: flex;
         flex-direction: column;
@@ -545,13 +564,19 @@ footer > div p{
     .activites .colonne figure{
         margin-bottom: 20px !important;
     }
-
+/* footer */
     footer {
         flex-direction: column;
         padding: 50px 0 0 30px
     }
-    footer > div {
-        margin-right: 0;
+    .marg_footer1{
+        margin-left: 0px;
+    }
+    .marg_footer2{
+        margin-left: 0px;
+    }
+    .marg_footer3{
+        margin-left: 0px;
     }
     footer > div p {
         margin-bottom: 15px;
@@ -560,3 +585,4 @@ footer > div p{
         margin-top: 30px;
     }
 }
+
