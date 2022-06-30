@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+    font-weight: 100 1000;
+}
+/* Media query Smartphone */
+@media screen and 

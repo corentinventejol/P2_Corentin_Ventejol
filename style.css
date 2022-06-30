@@ -8,13 +8,16 @@ body {
   margin: 0;
 }
 .color_blue{
-    color: blue;
+    color: #0065FC;
 }
 .color_lightgray{
     color: #f2f2f2;
 }
+.color_white{
+    color: white;
+}
 .back_blue{
-    background-color: blue;
+    background-color: #0065FC;
 }
 .back_lightgray{
     background-color: #f2f2f2;
@@ -346,7 +349,7 @@ main{
     /* border: 2px solid blue; pour le test */
     width: 23%;
 }
-.activites .colonne p{
+.activites .colonne h3{
     margin-top: 15px;
     margin-left: 10px;
 }
