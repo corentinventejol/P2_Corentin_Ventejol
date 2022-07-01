@@ -7,7 +7,7 @@
 @media screen and (max-width: 600px) {
         /* header */
         header {
-            padding-left: 35px;
+            padding-left: 15px;
         }
         header h1 {
             margin-top: 80px;
@@ -79,11 +79,18 @@
         .margFiltreTitre {
             margin-right: 200px;
             margin-bottom: 10px;
+            margin-left: 15px;
         }
         .filtreTextIcons {
             margin-bottom: 15px;
             margin-right: 0px;
             margin-left: 10px;
+        }
+        .info {
+            margin-left: 15px;
+        }
+        .info p {
+            font-size: 16px;
         }
         /* hebergements */
         .hebergements {
