@@ -4,7 +4,7 @@
     font-weight: 100 1000;
 }
 /* Media query tablette */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
         /* header */
         .header {
             padding-left: 30px;
