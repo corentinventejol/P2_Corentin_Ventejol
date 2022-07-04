@@ -4,14 +4,38 @@
     font-weight: 100 1000;
 }
 /* Media query tablette */
-@media screen and (min-width: 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
         /* header */
         .header {
             padding-left: 30px;
         }
+        /* barre_recherche */
+        .BordureSearch{
+            width: 50%;
+            margin-right: 0;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+        /* filtres */
+        .margFiltreTitre {
+            margin-right: 200px;
+            margin-bottom: 30px;
+            margin-left: 350px;
+        }
+        /* hebergements */
+        .hebergements .figures {
+            width: 50%;
+        }
+        /* activites */
+        .activites {
+            width: 50%;
+        }
         /* footer */
+        .footer {
+            align-self: center;
+        }
         .marg_footer1{
-            margin-left: 0px;
+            margin-left: 30px;
         }
         .marg_footer2{
             margin-left: 0px;

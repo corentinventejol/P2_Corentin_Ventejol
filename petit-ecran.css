@@ -4,7 +4,7 @@
     font-weight: 100 1000;
 }
 /* Media query Smartphone */
-@media screen and (max-width: 600px) {
+@media only screen and (min-width : 321px) {
         /* header */
         header {
             padding-left: 15px;
