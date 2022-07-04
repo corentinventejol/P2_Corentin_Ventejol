@@ -9,6 +9,9 @@
         .header {
             padding-left: 30px;
         }
+        .logo {
+            margin-left: 45%;
+        }
         /* barre_recherche */
         .BordureSearch{
             width: 50%;
