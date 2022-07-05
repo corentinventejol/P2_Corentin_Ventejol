@@ -1,11 +1,7 @@
-@font-face {
-    font-family: "Raleway";
-    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
-    font-weight: 100 1000;
-}
 body {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   margin: 0;
+  width: 100%;
 }
 .color_blue{
     color: #0065FC;
@@ -346,8 +342,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 2px solid blue; pour le test */
     width: 23%;
+    border-radius: 0 0 15px 15px;
 }
 .activites .colonne h3{
     margin-top: 15px;
@@ -365,6 +361,7 @@ main{
 .activites .colonne figure .image{
     max-width: 100%;
     overflow: hidden;
+    border-radius: 15px 15px 0 0;
 }
 .activites .colonne figure .image img{
     /* width: 100%;
@@ -378,37 +375,41 @@ main{
 }
 .activites .colonne_simple figure{
     height: 100%;
+    box-shadow: 1px 1px 50px 1px #deebff;
 }
 .activites .colonne_simple figure .image{
     height: 400px;
 }
 .activites .colonne_double figure.h240{
     height: 240px;
-    box-shadow: 1px 1px 12px #deebff;
+    box-shadow: 1px 1px 50px 1px #deebff;;
 }
 .activites .colonne_double figure.h200{
     height: 200px;
-    box-shadow: 1px 1px 12px #deebff;
+    box-shadow: 1px 1px 50px 1px #deebff;
+    border-radius: 0 0 15px 15px;
 }
 .activites .colonne_double figure.h160{
     height: 160px;
-    box-shadow: 1px 1px 12px #deebff;
+    box-shadow: 1px 1px 50px 1px #deebff;
+    border-radius: 0 0 15px 15px;
 }
 .activites .colonne_double figure.h160 .image{
     height: 110px;
+    border-radius:15px 15px 0 0;
 }
 .activites .colonne_double figure.h240 .image{
     height: 190px;
+    box-shadow: 1px 1px 50px 1px #deebff;
 }
 .activites .colonne_double figure.h200.image{
     height: 140px;
+    box-shadow: 1px 1px 50px 1px #deebff;
 }
 .activites .colonne_simple figure .image img{
-    /* height: 400px; */
-    box-shadow: 1px 1px 12px #deebff;
+    box-shadow: 1px 1px 50px 1px #deebff;
 }
 .activites figure figcaption{
-    border: 2px solid #deebff;
     border-radius: 0 0 15px 15px;
 }
 /*footer*/

@@ -1,10 +1,7 @@
-@font-face {
-    font-family: "Raleway";
-    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
-    font-weight: 100 1000;
-}
-/* Media query Smartphone */
-@media only screen and (min-width : 321px) {
+    
+    body{
+        width: 98%;
+    }
         /* header */
         header {
             padding-left: 15px;
@@ -115,7 +112,7 @@
             margin-left: 20px;
             margin-bottom: 20px;
             border-radius: 20px;
-            box-shadow: 1px 1px 12px #deebff;
+            box-shadow: 1px 1px 11px 1px #deebff;
         }
         /* populaires */
         .populaires {
@@ -151,13 +148,14 @@
             flex-direction: column;
         }
         .marg_footer1{
-            margin-left: 35px;
+            margin-left: 25px;
         }
         .marg_footer2{
-            margin-left: 35px;
+            margin-left: 25px;
         }
         .marg_footer3{
-            margin-left: 35px;
+            margin-left: 25px;
+            margin-bottom: 15px;
         }
         footer > div p {
             margin-bottom: 15px;
@@ -165,4 +163,3 @@
         footer > div h3 {
             margin-top: 30px;
         }
-}
