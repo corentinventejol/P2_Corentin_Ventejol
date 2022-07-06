@@ -268,7 +268,7 @@ main{
     flex-direction: column;
     /* border: 2px solid blue; pour le test */
     width: 30%;
-    padding: 20px;
+    padding: 26px;
     border-radius: 20px;
 }
 .populaires .titre{

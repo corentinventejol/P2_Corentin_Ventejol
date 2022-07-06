@@ -33,12 +33,17 @@
         .hebergements .figures figure figcaption {
             min-height: 50%;
         }
+        .text_afficher {
+            margin-top: 17px;
+        }
         /* populaires */
         .populaires {
             height: 584px;
+            padding: 20px;
         }
         .populaires .figures {
             height: 542px;
+            justify-content: space-evenly;
         }
         .populaires .figures figcaption {
             height: 96%;
