@@ -19,8 +19,23 @@
             margin-left: 350px;
         }
         /* hebergements */
+        .hebergements {
+            height: 624px;
+        }
         .hebergements .figures {
-            width: 50%;
+            width: 100%;
+            height: 530px;
+        }
+        .test{
+            max-height: 419% !important;
+            background-color: red;
+        }
+        /* populaires */
+        .populaires {
+            height: 584px;
+        }
+        .populaires .figures {
+            height: 542px;
         }
         /* activites */
         .activites {
