@@ -2,8 +2,9 @@
             width: 98%;
         }
         /* header */
-        .header {
-            padding-left: 30px;
+        header {
+            padding-left: 18px;
+            padding-right: 0px;
         }
         /* barre_recherche */
         .BordureSearch{
@@ -18,6 +19,9 @@
             margin-bottom: 30px;
             margin-left: 350px;
         }
+        main {
+            margin-left: 7px;
+        }
         /* hebergements */
         .hebergements {
             height: 624px;
@@ -26,9 +30,8 @@
             width: 100%;
             height: 530px;
         }
-        .test{
-            max-height: 419% !important;
-            background-color: red;
+        .hebergements .figures figure figcaption {
+            min-height: 50%;
         }
         /* populaires */
         .populaires {
@@ -37,20 +40,27 @@
         .populaires .figures {
             height: 542px;
         }
+        .populaires .figures figcaption {
+            height: 96%;
+        }
         /* activites */
         .activites {
-            width: 50%;
+            width: 100%;
+        }
+        #activites {
+            margin-left: 19px;
+            margin-right: 11px;
         }
         /* footer */
         .footer {
             align-self: center;
         }
         .marg_footer1{
-            margin-left: 30px;
+            margin-left: 70px;
         }
         .marg_footer2{
-            margin-left: 0px;
+            margin-left: 74px;
         }
         .marg_footer3{
-            margin-left: 0px;
+            margin-left: 100px;
         }
