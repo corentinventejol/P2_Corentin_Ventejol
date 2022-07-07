@@ -11,6 +11,7 @@
     }
     .logo {
         margin-left: 128px;
+        margin-left: 148px;
     }
     .logo img {
         margin-top: 20px;
@@ -22,6 +23,7 @@
         left: 0;
         margin: 0;
         padding: 0;
+        width: 104%;
     }
     nav ul {
         list-style-type: none;
@@ -57,6 +59,7 @@
         width: 100%;
         margin-left: 0;
         margin-right: 20px;
+        margin-top: 20px;
         border: 3px solid #f2f2f2;
     }
     .recherche {
@@ -80,8 +83,8 @@
     }
     .filtreTextIcons {
         margin-bottom: 15px;
-        margin-right: 0px;
-        margin-left: 10px;
+        margin-right: -8px;
+        margin-left: 13px;
     }
     .info {
         margin-left: 15px;
@@ -146,6 +149,7 @@
     /* footer */
     footer {
         flex-direction: column;
+        width: 92%;
     }
     .marg_footer1{
         margin-left: 25px;

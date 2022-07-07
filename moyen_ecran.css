@@ -60,6 +60,7 @@ main {
 /* footer */
 .footer {
     align-self: center;
+    width: 97%;
 }
 .marg_footer1{
     margin-left: 70px;
