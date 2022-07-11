@@ -416,8 +416,8 @@ main{
 footer{
     display: flex;;
     margin-top: 50px;
-    padding: 50px 40px 40px 0px;
-    width: 98%;
+    padding: 50px 0px 40px 0px;
+    width: 100%;
 }
 .marg_footer1{
     margin-left: 60px

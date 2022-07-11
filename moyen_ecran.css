@@ -57,6 +57,9 @@ main {
     margin-right: 11px;
     margin-top: 62px;
 }
+.activites .colonne h3 {
+    margin-top: 6px;
+}
 /* footer */
 .footer {
     align-self: center;
