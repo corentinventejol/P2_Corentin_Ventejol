@@ -108,7 +108,6 @@
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
-        box-shadow: black;
     }
     .hebergements .figures figure {
         width: 90%;
@@ -141,7 +140,6 @@
     .activites .colonne figure .image,
     .activites .colonne figure .image img {
         height: 180px !important;
-        box-shadow: black 2px;
     }
     .activites .colonne figure{
         margin-bottom: 20px !important;

@@ -185,9 +185,10 @@ nav ul li:hover{
 }
 nav ul li a{
     text-decoration:none;
+    color: black;
 }
 nav ul li a:hover{
-    color: black;
+    color: #0065FC;
 }
 
 main{
