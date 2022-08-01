@@ -555,8 +555,9 @@ footer > div p{
     }
     /* populaires */
     .populaires {
-        width: 97%;
-        border-radius: 0px
+        max-width: 100%;
+        border-radius: 0px;
+        min-width: 95%;
     }
     /* activites */
     #activites {
