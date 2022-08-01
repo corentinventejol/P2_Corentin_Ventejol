@@ -119,9 +119,6 @@ header p{
 .margFiltreTitre{
     margin-right: 20px;
 }
-/* .margFiltreTitre h3{
-    /*font-size: ;
-} */
 .filtreTextIcons{
     border: 2px solid #f2f2f2;
     height: 50px;
@@ -202,12 +199,10 @@ main{
 
 /*Hebergements*/
 .hebergements{
-    /* border: 2px solid blue; pour le test */
     width: 60%;
     border-radius: 20px;
 }
 .hebergements h2{
-    /* border: 2px solid green; pour le test */
     margin-top: 25px;
     margin-left: 20px;
 }
@@ -221,12 +216,10 @@ main{
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-evenly;
-    /* border: 2px solid red; pour le test */
     height: 480px;
 }
 .hebergements .figures figure{
     flex-direction: column;
-    /* border:2px solid yellow; pour le test */
     width: 30%;
     height: 200px;
     margin: 0;
@@ -268,7 +261,6 @@ main{
 .populaires{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid blue; pour le test */
     width: 30%;
     padding: 26px;
     border-radius: 20px;
@@ -278,20 +270,15 @@ main{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-/* .populaires .titre h2{
-    /* border: 2px solid green; pour le test
-} */
 .populaires .figures{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 510px;
-    /* border: 2px solid red; pour le test */
 }
 .populaires .figures figure{
     display: flex;
     flex-direction: row;
-    /* border: 2px solid yellow; pour le test */
     margin: 0;
     border-radius: 15px 15px 15px 15px;
     padding: 5px;
@@ -301,7 +288,6 @@ main{
     height: 135px;
     overflow: hidden;
     border-radius: 15px 0 0 15px
-    /* border: 2px solid blue; pour le test */
 }
 .populaires .figures .image img{
     min-width: 100%;
@@ -366,8 +352,6 @@ main{
     border-radius: 15px 15px 0 0;
 }
 .activites .colonne figure .image img{
-    /* width: 100%;
-    height: auto; */
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
@@ -455,7 +439,6 @@ footer > div p{
     }
     /* navigation */
     nav {
-        /* position: relative; */
         top: 100px;
         left: 0;
         margin: 0;
@@ -558,6 +541,7 @@ footer > div p{
         max-width: 100%;
         border-radius: 0px;
         min-width: 95%;
+        padding: 4%;
     }
     /* activites */
     #activites {
